@@ -54,7 +54,7 @@ function App() {
               setLosses={setLosses}
               questionText={quizQuestions.secondQuestion.questionText}
               questionImgSrc={quizQuestions.secondQuestion.questionImgSrc}
-              questionImgAlt={quizQuestions.firstQuestion.questionImgAlt}
+              questionImgAlt={quizQuestions.secondQuestion.questionImgAlt}
               firstOption={
                 quizQuestions.secondQuestion.questionOptions.firstOption
               }
@@ -66,6 +66,34 @@ function App() {
               }
               fourthOption={
                 quizQuestions.secondQuestion.questionOptions.fourthOption
+              }
+            />
+          }
+        ></Route>
+        <Route
+          path="/third-question"
+          element={
+            <Quiz
+              answer={answer}
+              setAnswer={setAnswer}
+              score={score}
+              setScore={setScore}
+              losses={losses}
+              setLosses={setLosses}
+              questionText={quizQuestions.thirdQuestion.questionText}
+              questionImgSrc={quizQuestions.thirdQuestion.questionImgSrc}
+              questionImgAlt={quizQuestions.thirdQuestion.questionImgAlt}
+              firstOption={
+                quizQuestions.thirdQuestion.questionOptions.firstOption
+              }
+              secondOption={
+                quizQuestions.thirdQuestion.questionOptions.secondOption
+              }
+              thirdOption={
+                quizQuestions.thirdQuestion.questionOptions.thirdOption
+              }
+              fourthOption={
+                quizQuestions.thirdQuestion.questionOptions.fourthOption
               }
             />
           }

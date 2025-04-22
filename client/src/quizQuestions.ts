@@ -1,5 +1,6 @@
 import tralaleroTralalaImg from "./assets/tralalero-tralala.png";
 import cappuccinoAssassinoImg from "./assets/cappuccino-assassino.png";
+import trippiTroppiImg from "./assets/trippi-troppi.png";
 
 type QuizQuestions = {
   [key: string]: {
@@ -71,6 +72,29 @@ const quizQuestions: QuizQuestions = {
       fourthOption: {
         text: "Cappuccino Assasino",
         isCorrect: true,
+      },
+    },
+  },
+  thirdQuestion: {
+    questionText: "Who is this?",
+    questionImgSrc: trippiTroppiImg,
+    questionImgAlt: "Trippi Troppi",
+    questionOptions: {
+      firstOption: {
+        text: "Trippi Troppi",
+        isCorrect: true,
+      },
+      secondOption: {
+        text: "Tung Tung Tung Sahur",
+        isCorrect: false,
+      },
+      thirdOption: {
+        text: "Bombardino Crocodilo",
+        isCorrect: false,
+      },
+      fourthOption: {
+        text: "Tralalero Tralala",
+        isCorrect: false,
       },
     },
   },
