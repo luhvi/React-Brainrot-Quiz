@@ -99,6 +99,62 @@ function App() {
           }
         ></Route>
         <Route
+          path="/fourth-question"
+          element={
+            <Quiz
+              answer={answer}
+              setAnswer={setAnswer}
+              score={score}
+              setScore={setScore}
+              losses={losses}
+              setLosses={setLosses}
+              questionText={quizQuestions.fourthQuestion.questionText}
+              questionImgSrc={quizQuestions.fourthQuestion.questionImgSrc}
+              questionImgAlt={quizQuestions.fourthQuestion.questionImgAlt}
+              firstOption={
+                quizQuestions.fourthQuestion.questionOptions.firstOption
+              }
+              secondOption={
+                quizQuestions.fourthQuestion.questionOptions.secondOption
+              }
+              thirdOption={
+                quizQuestions.fourthQuestion.questionOptions.thirdOption
+              }
+              fourthOption={
+                quizQuestions.fourthQuestion.questionOptions.fourthOption
+              }
+            />
+          }
+        ></Route>
+        <Route
+          path="/fifth-question"
+          element={
+            <Quiz
+              answer={answer}
+              setAnswer={setAnswer}
+              score={score}
+              setScore={setScore}
+              losses={losses}
+              setLosses={setLosses}
+              questionText={quizQuestions.fifthQuestion.questionText}
+              questionImgSrc={quizQuestions.fifthQuestion.questionImgSrc}
+              questionImgAlt={quizQuestions.fifthQuestion.questionImgAlt}
+              firstOption={
+                quizQuestions.fifthQuestion.questionOptions.firstOption
+              }
+              secondOption={
+                quizQuestions.fifthQuestion.questionOptions.secondOption
+              }
+              thirdOption={
+                quizQuestions.fifthQuestion.questionOptions.thirdOption
+              }
+              fourthOption={
+                quizQuestions.fifthQuestion.questionOptions.fourthOption
+              }
+            />
+          }
+        ></Route>
+        <Route
           path="/score"
           element={
             <ScoreDisplay

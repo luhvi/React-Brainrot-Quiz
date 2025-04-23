@@ -1,6 +1,8 @@
 import tralaleroTralalaImg from "./assets/tralalero-tralala.png";
 import cappuccinoAssassinoImg from "./assets/cappuccino-assassino.png";
 import trippiTroppiImg from "./assets/trippi-troppi.png";
+import brrBrrPatapim from "./assets/brr-brr-patapim.png";
+import tungTungTungSahur from "./assets/tung-tung-tung-sahur.png";
 
 type QuizQuestions = {
   [key: string]: {
@@ -94,6 +96,52 @@ const quizQuestions: QuizQuestions = {
       },
       fourthOption: {
         text: "Tralalero Tralala",
+        isCorrect: false,
+      },
+    },
+  },
+  fourthQuestion: {
+    questionText: "Who is this?",
+    questionImgSrc: brrBrrPatapim,
+    questionImgAlt: "Brr Brr Patapim",
+    questionOptions: {
+      firstOption: {
+        text: "Tung Tung Tung Sahur",
+        isCorrect: false,
+      },
+      secondOption: {
+        text: "Bombardino Crocodilo",
+        isCorrect: false,
+      },
+      thirdOption: {
+        text: "Lirili Larila",
+        isCorrect: false,
+      },
+      fourthOption: {
+        text: "Brr Brr Patapim",
+        isCorrect: true,
+      },
+    },
+  },
+  fifthQuestion: {
+    questionText: "Who is this?",
+    questionImgSrc: tungTungTungSahur,
+    questionImgAlt: "Tung Tung Tung Sahur",
+    questionOptions: {
+      firstOption: {
+        text: "Tung Tung Tung Sahur",
+        isCorrect: true,
+      },
+      secondOption: {
+        text: "Bombardino Crocodilo",
+        isCorrect: false,
+      },
+      thirdOption: {
+        text: "Lirili Larila",
+        isCorrect: false,
+      },
+      fourthOption: {
+        text: "Cappuccino Assasino",
         isCorrect: false,
       },
     },

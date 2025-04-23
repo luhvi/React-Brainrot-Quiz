@@ -13,12 +13,26 @@ const ScoreDisplay = ({ answer, score, losses }: ScoreDisplayProps) => {
       navigate("/second-question");
     } else if (score + losses === 2) {
       navigate("/third-question");
+    } else if (score + losses === 3) {
+      navigate("/fourth-question");
+    } else if (score + losses === 4) {
+      navigate("/fifth-question");
+    }
+  };
+
+  const scoreText = () => {
+    if (score <= 2) {
+      return "You're honestly a disgrace to Italy...";
+    } else if (score <= 4) {
+      return "You're quite knowledgeable...";
+    } else if (score === 5) {
+      return "You're very sigma!";
     }
   };
 
   return (
     <div className="flex flex-col items-center justify-center text-center">
-      {score + losses < 3 ? (
+      {score + losses < 5 ? (
         <>
           <h1 className="text-xl font-semibold">
             You guessed {answer ? "correctly" : "incorrectly"}!
@@ -32,14 +46,12 @@ const ScoreDisplay = ({ answer, score, losses }: ScoreDisplayProps) => {
           </button>
         </>
       ) : null}
-      {score + losses === 3 ? (
+      {score + losses === 5 ? (
         <>
           <h1 className="text-xl font-semibold">
             You finished the Italian Brainrot Quiz with a score of {score}!
             <br />
-            {score === 3
-              ? "You're truly a sigma when it comes to Italian Brainrot..."
-              : "You're honestly a beta when it comes to Italian Brainrot..."}
+            {scoreText()}
           </h1>
         </>
       ) : null}
