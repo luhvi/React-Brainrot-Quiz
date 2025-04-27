@@ -32,8 +32,23 @@ const Quiz = ({
     navigate("/score");
   };
 
+  const questionNumber = () => {
+    if (questionImgAlt === "Tralalero Tralala") {
+      return "1/5";
+    } else if (questionImgAlt === "Cappuccino Assasino") {
+      return "2/5";
+    } else if (questionImgAlt === "Trippi Troppi") {
+      return "3/5";
+    } else if (questionImgAlt === "Brr Brr Patapim") {
+      return "4/5";
+    } else if (questionImgAlt === "Tung Tung Tung Sahur") {
+      return "5/5";
+    }
+  };
+
   return (
     <div className="flex flex-col items-center justify-center text-center">
+      <h1 className="font-medium">Question: {questionNumber()}</h1>
       <h1 className="mb-5 text-2xl font-medium">{questionText}</h1>
       <img
         className="mb-2 w-80 rounded-lg shadow-2xl"
